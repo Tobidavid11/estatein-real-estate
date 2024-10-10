@@ -5,13 +5,12 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import MediaFooter from './Components/MediaFooter';
 
-// Import the new pages
 import AboutUs from './Pages/AboutUs';
 import Properties from './Pages/Properties';
 import Services from './Pages/Services';
 import ContactUs from './Pages/ContactUs'; 
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Router components
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -35,12 +34,11 @@ function App() {
       <div>
         <main>
           <Routes>
-            {/* Define the routes for the pages */}
-            <Route path="/" element={<Home />} /> {/* Home Page */}
-            <Route path="/about" element={<AboutUs />} /> {/* About Us Page */}
-            <Route path="/properties" element={<Properties />} /> {/* Properties Page */}
-            <Route path="/services" element={<Services />} /> {/* Services Page */}
-            <Route path="/contact" element={<ContactUs />} /> {/* Contact Us Page */}
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} /> 
+            <Route path="/properties" element={<Properties />} /> 
+            <Route path="/services" element={<Services />} />
+            <Route path="/contact" element={<ContactUs />} />
           </Routes>
         </main>
       </div>
@@ -48,7 +46,6 @@ function App() {
   );
 }
 
-// Placeholder component for Home
 function Home() {
   return (
     <div>
