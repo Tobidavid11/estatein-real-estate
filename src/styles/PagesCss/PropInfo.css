@@ -1,0 +1,169 @@
+:root {
+  --bg-color: #141414;
+  --form-bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --input-bg-color: #262626;
+  --input-border-color: #333333;
+  --placeholder-color: #666666;
+  --button-color: #703bf7;
+}
+
+.info-container {
+  background-color:#141414;
+  padding: 2rem 1rem;
+  color: var(--text-color);
+}
+
+.info-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.features-header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.feature-sub {
+  color: var(--placeholder-color);
+  font-size: 1rem;
+  max-width: 100%;
+  margin: 1rem 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.property-form {
+  background-color: var(--form-bg-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  flex: 1 1 calc(50% - 0.5rem);
+  min-width: 100%;
+}
+
+.form-group label {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  display: block;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--input-bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input::placeholder,
+select,
+textarea::placeholder {
+  color: var(--placeholder-color);
+}
+
+.contact-method {
+  flex-basis: 100%;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-container .number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+  background-color: var(--input-bg-color);
+  border-radius: 4px;
+}
+
+.number input{
+  border: none;
+  width: 100%;
+  padding-left: 0.5rem;
+}
+
+.number img {
+  width: 20px;
+}
+
+.message {
+  flex-basis: 100%;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.submit-btn {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+.form-group {
+  color: #999999;
+  margin: .4rem 0;
+}
+.form-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+  background-color: #999999;
+  color: #999999;
+}
+
+.form-group a {
+  color: #999999;
+  text-decoration: none;
+}
+
+/* Media query for mobile design */
+@media (max-width: 768px) {
+  .features-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .feature-sub {
+    font-size: 0.95rem;
+  }
+
+  .property-form {
+    padding: 1.2rem;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+}

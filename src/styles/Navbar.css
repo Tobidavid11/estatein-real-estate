@@ -1,0 +1,122 @@
+:root {
+  --color-one: #666666;
+  --color-two: #262626;
+  --color-three: #703bf7;
+  --light: #fff;
+  --color-four: #1a1a1a;
+  --color-five: #999999;
+  --color-six: #ffe500;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.5rem;
+  background-color: var(--color-four);
+  border-top: 2px solid var(--color-one);
+  border-bottom: 2px solid var(--color-one);
+  position: relative;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+.pages-link ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--light);
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+}
+
+li a::after {
+  border: 1px solid var(--color-two);
+  background-color: #141414;
+  padding: 7px 9px;
+  border-radius: 5px;
+}
+.contact-page{
+  display: none;
+}
+.contact-link a {
+  display: flex;
+  color: white;
+  border: 1px solid var(--color-two);
+  background-color: #141414;
+  padding: 7px 9px;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: var(--color-three);
+  transition: 0.2s ease-in-out;
+}
+
+/* Mobile menu */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon img {
+  height: 2rem;
+}
+
+/* Mobile menu hidden by default */
+.pages-link ul {
+  transition:.3s all linear;
+ 
+}
+
+/* Mobile Responsive Styles */
+@media (max-width:768px) {
+.contact-page {
+  display: block;
+}  
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+.contact-link{
+  display: none;
+}
+  .pages-link ul {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: var(--color-four);
+    z-index: 1;
+    height: 100vh;
+        flex-direction: column;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .pages-link.active ul {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .pages-link ul li {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--color-one);
+  }
+
+  .pages-link ul li a {
+    font-size: 20px;
+    padding: 0.5rem 0;
+  }
+}

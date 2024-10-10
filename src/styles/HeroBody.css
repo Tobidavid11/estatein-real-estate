@@ -1,0 +1,86 @@
+:root {
+  --color-one: #666666;
+  --color-two: #262626;
+  --color-three: #703bf7;
+  --neutral: #fff;
+  --color-four: #1a1a1a;
+  --color-five: #999999;
+  --color-six: #ffe500;
+}
+
+.herobody-container {
+  color: var(--neutral);
+  background-color: var(--color-four);
+  width: 100%;
+  height: auto; /* Allow height to adjust based on content */
+  padding: 2rem 0; /* Padding for top and bottom */
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center; /* Center the box container */
+  align-items: center; /* Center vertically */
+}
+
+.box-container {
+  display: flex;
+  align-items: stretch; /* Ensure boxes stretch to match height */
+  gap: 1rem; /* Increased gap between boxes */
+}
+
+.boxes {
+  border-radius: 12px;
+  background-color: var(--color-two);
+  width: 350px; /* Fixed width */
+  height: 140px; /* Fixed height */
+  border: 1px solid var(--color-one);
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 1rem; /* Padding inside the boxes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.boxes:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.icon-arrow {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.icon-arrow img {
+  width: 24px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon img {
+  width: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.icon p {
+  margin: 0;
+  color: var(--neutral); /* Ensure text is white */
+}
+
+@media (max-width: 768px) {
+  .boxes {
+    width: 100%; /* Allow boxes to be responsive on smaller screens */
+  }
+
+  .box-container {
+    flex-direction: column; /* Stack boxes vertically on small screens */
+    align-items: center; /* Center boxes */
+  }
+}

@@ -1,0 +1,63 @@
+.conclusion-container {
+  background-color: #141414;
+  padding: 4rem 0;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+}
+
+.conclusion-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.conclusion-container h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.conclusion-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.conclusion-container p {
+  color: #999999;
+  font-size: 1.1rem; /* Increased font size for better readability */
+  max-width: 60%;
+  line-height: 1.7; /* Improved line height for better clarity */
+}
+
+.conclusion-container button {
+  padding: 0.75rem 1.5rem;
+  background-color: #703bf7;
+  color: #fff;
+  border: 1px solid #141414;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.conclusion-container button:hover {
+  background-color: #5e30d0; /* Slightly darker hover effect */
+}
+
+@media (max-width: 768px) {
+  .conclusion-subheader {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .conclusion-container p {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .conclusion-container button {
+      margin-top: 1rem;
+  }
+}

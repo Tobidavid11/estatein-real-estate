@@ -1,0 +1,128 @@
+.about-hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 5%;
+  background-color: #141414;
+  color: var(--light);
+  min-height: 80vh;
+  border-bottom: 1px solid #262626;
+}
+
+.about-hero-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-hero-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--light);
+}
+
+.about-hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--color-five);
+}
+
+.about-hero-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  background-color: var(--color-two);
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid var(--color-one);
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+}
+
+.stat-item h2 {
+  font-size: 2rem;
+  color: var(--color-six);
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: var(--light);
+}
+
+.about-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero-image img {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .about-hero-section {
+    flex-direction: column;
+    padding: 2rem 5%;
+  }
+
+  .about-hero-content,
+  .about-hero-image {
+    max-width: 100%;
+  }
+
+  .about-hero-image {
+    order: -1; /* Move image to the top */
+    margin-bottom: 2rem;
+  }
+
+  .about-hero-heading {
+    font-size: 2rem;
+  }
+
+  .about-hero-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  .about-hero-image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-section {
+    padding: 1.5rem 5%;
+  }
+
+  .about-hero-heading {
+    font-size: 1.75rem;
+  }
+
+  .stat-item {
+    flex: 1 1 100%;
+  }
+
+  .stat-item h2 {
+    font-size: 1.5rem;
+  }
+
+  .stat-item p {
+    font-size: 0.9rem;
+  }
+}
