@@ -3,6 +3,7 @@ import "../styles/Navbar.css";
 import logo from "../assets/Logo.png";
 import menu from "../assets/menu-buger.png";
 import close from "../assets/Icon.png";
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,10 +20,10 @@ export default function Navbar() {
 
       <span className={`pages-link ${isMobileMenuOpen ? "active" : ""}`}>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/properties">Properties</a></li>
-          <li><a href="/services">Services</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/properties">Properties</Link></li>
+          <li><Link to="/services">Services</Link></li>
          <div className='contact-page'>
          <li><a href="/contact">Contact Us</a></li>
          </div>
