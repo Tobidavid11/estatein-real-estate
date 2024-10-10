@@ -31,7 +31,7 @@ export default function Navbar() {
       </span>
 
       <span className="contact-link">
-        <a href="/contact">Contact Us</a>
+        <Link to="/contact">Contact Us</Link>
       </span>
 
       {/* Mobile menu toggle icon */}
