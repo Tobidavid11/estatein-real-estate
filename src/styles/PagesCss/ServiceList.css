@@ -162,3 +162,11 @@ color: var(--text-color);
   margin-top: 5rem;
   width: 100%;
 }
+@media (max-width:768px) {
+  .header-content{
+    display: block;
+  }
+  .header-content button{
+margin: .5rem 0;
+  }
+}

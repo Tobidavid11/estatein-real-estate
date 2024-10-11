@@ -172,7 +172,14 @@
   }
   /* Responsive design */
 @media (max-width:768px) {
-    .features-sub button {
-        margin: 1rem auto;
+    .features-sub  {
+        display:grid;
+        align-items: center;
+    }
+    .features-sub p{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 80%;
     }
 }

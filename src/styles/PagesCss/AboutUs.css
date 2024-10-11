@@ -1,3 +1,7 @@
+body{
+    width: 100%;
+    shape-image-threshold: 0.5;
+}
 .About-container{
     background-color: #141414;
 }

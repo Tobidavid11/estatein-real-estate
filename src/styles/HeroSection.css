@@ -13,9 +13,9 @@
   align-items: center;
   padding: 4rem 2rem;
   background-color: var(--bg-color);
-  color: var(--text-color);
+  color: var(--primary-color);
   width: 100%;
-  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+  flex-wrap: wrap;
 }
 
 .hero-content {
@@ -30,7 +30,7 @@
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .hero-subtitle {
@@ -109,7 +109,7 @@
 
 .stat-box h3 {
   font-size: 2.5rem;
-  color: var(--accent-color);
+  color: var(--text-color);
   margin-bottom: 0.5rem;
 }
 

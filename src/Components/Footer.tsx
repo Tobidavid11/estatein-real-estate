@@ -24,7 +24,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Additional List Sections can go here */}
           <div className="list">
             <p>About Us</p>
             <ul>

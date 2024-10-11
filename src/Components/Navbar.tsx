@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "../styles/Navbar.css";
 import logo from "../assets/Logo.png";
 import menu from "../assets/menu-buger.png";
@@ -9,8 +9,20 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen(prevState => !prevState);
   };
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden"; 
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <div className="navbar-container">
@@ -24,9 +36,9 @@ export default function Navbar() {
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/properties">Properties</Link></li>
           <li><Link to="/services">Services</Link></li>
-         <div className='contact-page'>
-         <li><a href="/contact">Contact Us</a></li>
-         </div>
+          <div className='contact-page'>
+            <li><a href="/contact">Contact Us</a></li>
+          </div>
         </ul>
       </span>
 
