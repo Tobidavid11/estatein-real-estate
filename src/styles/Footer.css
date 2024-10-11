@@ -35,10 +35,15 @@
     width: 100%;
     max-width: 300px;
     outline: none;
+    transition: border-color 0.3s ease; /* Adding transition for focus effect */
 }
 
 .footer-input::placeholder {
     color: #999; /* Improved placeholder color for better contrast */
+}
+
+.footer-input:focus {
+    border-color: #fff; /* Highlight border on focus */
 }
 
 .list-section {
@@ -72,10 +77,22 @@
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
+        align-items: center; /* Center content on smaller screens */
+        padding: 0 1rem; /* Reduce padding for mobile */
+    }
+
+    .message-content {
+        align-items: center; /* Center align the message content */
     }
 
     .list-section {
-        justify-content: center; 
+        justify-content: center;
+        width: 100%; /* Ensure full width on smaller screens */
+        padding: 0 1rem; /* Add padding to the list section */
+    }
+
+    .list {
+        margin: 1rem 0; /* Add margin for better spacing */
     }
 }
 
@@ -90,5 +107,13 @@
 
     .list-section {
         gap: 1rem;
+    }
+
+    .list p {
+        font-size: 1rem; /* Reduce font size on smaller devices */
+    }
+
+    .list li {
+        margin-bottom: 0.3rem; /* Reduce space between list items */
     }
 }

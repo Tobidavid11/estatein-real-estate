@@ -7,20 +7,27 @@ export default function Footer() {
       <div className="footer-content">
         <div className="message-content">
           <span>
-            <img src={logo} alt="Logo" className="footer-logo"/>
+            <img src={logo} alt="Logo" className="footer-logo" />
           </span>
-          <input type="email" name="email" id="email" placeholder="Enter your email" className="footer-input"/>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            className="footer-input"
+            aria-label="Email Subscription"
+          />
         </div>
 
         <div className="list-section">
           <div className="list">
             <p>Home</p>
             <ul>
-              <li>Herosection</li>
+              <li>Hero Section</li>
               <li>Features</li>
               <li>Properties</li>
-              <li>Testimonial</li>
-              <li>FAQ's</li>
+              <li>Testimonials</li>
+              <li>FAQ</li>
             </ul>
           </div>
 
@@ -40,8 +47,7 @@ export default function Footer() {
               <li>Portfolio</li>
               <li>Categories</li>
             </ul>
-          </div>  
-
+          </div>
 
           <div className="list">
             <p>Services</p>
@@ -51,7 +57,7 @@ export default function Footer() {
               <li>Negotiation Wizardry</li>
               <li>Property Management</li>
             </ul>
-          </div>     
+          </div>
 
           <div className="list">
             <p>Contact Us</p>
@@ -59,7 +65,7 @@ export default function Footer() {
               <li>Contact Form</li>
               <li>Our Office</li>
             </ul>
-          </div>  
+          </div>
         </div>
       </div>
     </div>
