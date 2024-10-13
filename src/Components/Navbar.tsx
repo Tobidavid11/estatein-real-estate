@@ -46,7 +46,6 @@ export default function Navbar() {
         <Link to="/contact">Contact Us</Link>
       </span>
 
-      {/* Mobile menu toggle icon */}
       <span className="menu-icon" onClick={toggleMenu}>
         <img src={isMobileMenuOpen ? close : menu} alt="menu" />
       </span>

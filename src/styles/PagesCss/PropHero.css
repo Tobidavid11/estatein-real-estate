@@ -200,7 +200,7 @@ body {
   }
 
   .property-grid {
-    grid-template-columns: repeat(2, 1fr); /* Show two properties in a row */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .filters {

@@ -82,7 +82,7 @@
   }
 
   .about-hero-image {
-    order: -1; /* Move image to the top */
+    order: -1;
     margin-bottom: 2rem;
   }
 
